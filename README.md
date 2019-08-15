@@ -1,35 +1,5 @@
-# bdp-mws
+ 
 
 The project of belle data monitor platform
-## bdp-mws¹¤³ÌËµÃ÷
-- 1.¹¤³ÌÃû³ÆÓÉÔ­À´µÄbdp-monitor±ä¸üÎªbdp-mws£»
-
-- 2.git²Ö¿âµØÖ·£ºhttp://github.com
-
-  
-
-  git³£ÓÃÃüÁî²Ù×÷¹æ·¶
-
-- 1.À­È¡ºÍÉÏ´«
-git pull
-git push 
-ÇĞ¼Ç£ºÒ»¶¨ÊÇÔÚpullÖ®ºóÔÙ½øĞĞpush£¬·ñÔòÓĞ¿ÉÄÜ»á¸²¸ÇÆäËû´úÂë
-Ç¿ÖÆÌá½»£ºgit push -u origin master -f
-
-- 2.ÇĞ»»·ÖÖ§
-²é¿´Ô¶³Ì·ÖÖ§£ºgit branch -a 
-±¾µØ´´½¨Ò»¸ö·ÖÖ§£º git checkout -b dev 
-Ô¶³Ì·ÖÖ§À­È¡µ½±¾µØ£º git checkout -b ±¾µØ·ÖÖ§Ãû origin/Ô¶³Ì·ÖÖ§Ãû 
-
-- 3.Ìá½»Ò»´Î´úÂëÁ÷³Ì
-git add /xx/xx/*   ¿Éµ¥¸ö»ò¶à¸ö
-git commit -m "Ó°ÏñÏµÍ³¼ÓÈëOSSÏà¹Ø²Ù×÷½Ó¿Ú´úÂë"  Ìá½»µ½±¾µØ¿â£¬²¢´øÓĞËµÃ÷
-git pull  »ò git pull origin dev
-git push »ò git push origin dev
-
-- 4.±£»¤¹¤×÷ÇøÏÖ³¡
-git stash
-git stash list
-git stash pop stash@{num}¡£num ¾ÍÊÇÄãÒª»Ö¸´µÄ¹¤×÷ÏÖ³¡µÄ±àºÅ¡£
-git stash clear 
-git stash apply stash@{num}·½·¨ ³ıÁË²»ÔÚstash¶ÓÁĞÉ¾³ıÍâÆäËûºÍgit stash pop ÍêÈ«Ò»Ñù¡£
+## spring-securityå·¥ç¨‹è¯´æ˜
+1.å®ç°å›¾å½¢éªŒè¯ç åŠŸèƒ½
