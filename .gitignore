@@ -8,10 +8,12 @@
 .project
 /.svn/
 /*/.svn/
+.metadata
 .recommenders
 *recommenders
 .metadata/
 *.metadata/
+/*/.metadata/
 # Compiled class file
 *.class
 
@@ -37,6 +39,6 @@
 *.bak
 *.iml
 .idea*
-
+.plugins
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
