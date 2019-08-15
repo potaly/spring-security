@@ -9,8 +9,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.potaly.security.core.properties.SecurityProperties;
+import com.potaly.security.core.validate.code.ValidateCodeFilter;
 
 /**
  * @author wang.qiang
@@ -32,7 +34,12 @@ public class BrowserSecurityBeanConfig extends WebSecurityConfigurerAdapter {
     private AuthenticationFailureHandler iPotalyAuthenticationFailureHandler;
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.formLogin()
+		ValidateCodeFilter validateCodeFilter = new ValidateCodeFilter();
+		validateCodeFilter.setAuthenticationFailureHandler(iPotalyAuthenticationFailureHandler);
+		
+		http
+		.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+		.formLogin()
 		.loginPage("/authentication/require")  //跳到controller
 		.loginProcessingUrl("/authentication/form")
 		.successHandler(iPotalyAuthenticationSuccessHandler)

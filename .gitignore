@@ -10,7 +10,8 @@
 /*/.svn/
 .recommenders
 *recommenders
-
+.metadata/
+*.metadata/
 # Compiled class file
 *.class
 

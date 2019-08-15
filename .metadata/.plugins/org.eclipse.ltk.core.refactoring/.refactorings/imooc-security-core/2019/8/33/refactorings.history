@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ValidateCodeException.java&apos; to &apos;potaly-security-core/src/main/java/com.potaly.security.core.validate.code&apos;&#x0D;&#x0A;- Original project: &apos;imooc-security-core&apos;&#x0D;&#x0A;- Destination element: &apos;potaly-security-core/src/main/java/com.potaly.security.core.validate.code&apos;&#x0D;&#x0A;- Original element: &apos;com.imooc.security.core.validate.code.ValidateCodeException.java&apos;" description="Copy compilation unit" destination="=potaly-security-core/src\/main\/java&lt;com.potaly.security.core.validate.code" element1="/src\/main\/java&lt;com.imooc.security.core.validate.code{ValidateCodeException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565856358185" units="1" version="1.0"/>
+</session>

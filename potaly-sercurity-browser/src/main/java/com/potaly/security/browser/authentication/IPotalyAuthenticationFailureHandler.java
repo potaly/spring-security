@@ -18,6 +18,7 @@ import org.springframework.security.web.authentication.SimpleUrlAuthenticationFa
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.potaly.security.browser.support.SimpleResponse;
 import com.potaly.security.core.enums.LoginType;
 import com.potaly.security.core.properties.SecurityProperties;
 
@@ -44,7 +45,7 @@ public class IPotalyAuthenticationFailureHandler extends SimpleUrlAuthentication
 			logger.info("登录失败");
 			response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
 			response.setContentType("application/json;charset=UTF-8");
-			response.getWriter().write(objectMapper.writeValueAsString(exception));
+			response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(exception.getMessage())));
 		}else {
 			super.onAuthenticationFailure(request, response, exception);
 		}
