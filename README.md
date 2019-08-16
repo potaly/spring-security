@@ -1,35 +1,29 @@
-# bdp-mws
-
-The project of belle data monitor platform
-## bdp-mws¹¤³ÌËµÃ÷
-- 1.¹¤³ÌÃû³ÆÓÉÔ­À´µÄbdp-monitor±ä¸üÎªbdp-mws£»
-
-- 2.git²Ö¿âµØÖ·£ºhttp://github.com
+ 
 
   
 
-  git³£ÓÃÃüÁî²Ù×÷¹æ·¶
+  gitå¸¸ç”¨å‘½ä»¤æ“ä½œè§„èŒƒ
 
-- 1.À­È¡ºÍÉÏ´«
+- 1.æ‹‰å–å’Œä¸Šä¼ 
 git pull
 git push 
-ÇĞ¼Ç£ºÒ»¶¨ÊÇÔÚpullÖ®ºóÔÙ½øĞĞpush£¬·ñÔòÓĞ¿ÉÄÜ»á¸²¸ÇÆäËû´úÂë
-Ç¿ÖÆÌá½»£ºgit push -u origin master -f
+åˆ‡è®°ï¼šä¸€å®šæ˜¯åœ¨pullä¹‹åå†è¿›è¡Œpushï¼Œå¦åˆ™æœ‰å¯èƒ½ä¼šè¦†ç›–å…¶ä»–ä»£ç 
+å¼ºåˆ¶æäº¤ï¼šgit push -u origin master -f
 
-- 2.ÇĞ»»·ÖÖ§
-²é¿´Ô¶³Ì·ÖÖ§£ºgit branch -a 
-±¾µØ´´½¨Ò»¸ö·ÖÖ§£º git checkout -b dev 
-Ô¶³Ì·ÖÖ§À­È¡µ½±¾µØ£º git checkout -b ±¾µØ·ÖÖ§Ãû origin/Ô¶³Ì·ÖÖ§Ãû 
+- 2.åˆ‡æ¢åˆ†æ”¯
+æŸ¥çœ‹è¿œç¨‹åˆ†æ”¯ï¼šgit branch -a 
+æœ¬åœ°åˆ›å»ºä¸€ä¸ªåˆ†æ”¯ï¼š git checkout -b dev 
+è¿œç¨‹åˆ†æ”¯æ‹‰å–åˆ°æœ¬åœ°ï¼š git checkout -b æœ¬åœ°åˆ†æ”¯å origin/è¿œç¨‹åˆ†æ”¯å 
 
-- 3.Ìá½»Ò»´Î´úÂëÁ÷³Ì
-git add /xx/xx/*   ¿Éµ¥¸ö»ò¶à¸ö
-git commit -m "Ó°ÏñÏµÍ³¼ÓÈëOSSÏà¹Ø²Ù×÷½Ó¿Ú´úÂë"  Ìá½»µ½±¾µØ¿â£¬²¢´øÓĞËµÃ÷
-git pull  »ò git pull origin dev
-git push »ò git push origin dev
+- 3.æäº¤ä¸€æ¬¡ä»£ç æµç¨‹
+git add /xx/xx/*   å¯å•ä¸ªæˆ–å¤šä¸ª
+git commit -m "å½±åƒç³»ç»ŸåŠ å…¥OSSç›¸å…³æ“ä½œæ¥å£ä»£ç "  æäº¤åˆ°æœ¬åœ°åº“ï¼Œå¹¶å¸¦æœ‰è¯´æ˜
+git pull  æˆ– git pull origin dev
+git push æˆ– git push origin dev
 
-- 4.±£»¤¹¤×÷ÇøÏÖ³¡
+- 4.ä¿æŠ¤å·¥ä½œåŒºç°åœº
 git stash
 git stash list
-git stash pop stash@{num}¡£num ¾ÍÊÇÄãÒª»Ö¸´µÄ¹¤×÷ÏÖ³¡µÄ±àºÅ¡£
+git stash pop stash@{num}ã€‚num å°±æ˜¯ä½ è¦æ¢å¤çš„å·¥ä½œç°åœºçš„ç¼–å·ã€‚
 git stash clear 
-git stash apply stash@{num}·½·¨ ³ıÁË²»ÔÚstash¶ÓÁĞÉ¾³ıÍâÆäËûºÍgit stash pop ÍêÈ«Ò»Ñù¡£
+git stash apply stash@{num}æ–¹æ³• é™¤äº†ä¸åœ¨stashé˜Ÿåˆ—åˆ é™¤å¤–å…¶ä»–å’Œgit stash pop å®Œå…¨ä¸€æ ·ã€‚
